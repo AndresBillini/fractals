@@ -40,24 +40,24 @@ body{
   padding-left:1.46vw;
 }
 
-#title{
-  position:absolute;
-  top:18.7vw;
-  left:24.25%;
-  height:2vw;
-  width:auto;
-  font-family: 'Play', sans-serif;
-  line-height:2vw;
-  color:white;
-  text-align:center;
-  font-size: 2.75vw;
-  white-space: nowrap;
-  z-index:1;
-  //background-color:rgba(0,0,0,0.3);
-  cursor: default;
-  background-image:url(../media/hexellence.png);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+#title {
+    position: absolute;
+    top: 18.7vw;
+    left: 24.25%;
+    height: 2vw;
+    width: auto;
+    font-family: 'Abel', sans-serif;
+    line-height: 2vw;
+    color: white;
+    text-align: center;
+    font-size: 2.75vw;
+    white-space: nowrap;
+    z-index: 1;
+    cursor: default;
+    /*background-color: rgba(255,255,255,1);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.01vw;
+    -webkit-background-clip: text;*/
 }
 
 .hex{

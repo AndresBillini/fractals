@@ -1,0 +1,13 @@
+﻿footer ul li{
+    text-align:unset;
+    list-style-type: none;
+}
+
+#langButton a:-webkit-any-link {
+    text-decoration: none;
+    color: #222;
+}
+
+#langButton a:-webkit-any-link:hover {
+    color: #00ff00;
+}

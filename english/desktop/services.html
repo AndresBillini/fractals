@@ -1,25 +1,23 @@
 ﻿<!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Fractals Studio - Services</title>
-  <meta name="google-site-verification" content="9FJz30uZfHM5pPdZ0FQ8U-ri3YZhrnqNMaks8zuCPeM" />
-  <meta name="description" content="UI/UX Design, web development, online research and community management. Place your company at the top of the web with fractals studio">
-  <meta name="keywords" content="website development, website hosting, html website development, wordpress website creation, wordpress website development, wordpress website development services, Web design 2017, ui ux design company, ui ux web design, ui ux services, ui ux developer, web design and development company, search engine optimization for website, seo meta description, seo on wordpress, seo program, seo 1, website keywords, online market research, online market research companies, online market research tools, website evaluation, web traffic analysis">
-  <meta name="google" content="notranslate" />
-  <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" type="text/css" id="style-css" href="//www.fractals.studio/css/services.css">
-  <link rel="stylesheet" type="text/css" id="style-css" href="//www.fractals.studio/css/menu.css">
-  <link rel="stylesheet" type="text/css" id="style-css" href="//www.fractals.studio/form/contact.css">
-  <link href="https://fonts.googleapis.com/css?family=Play:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="icon" type="image/png" href="//www.fractals.studio/favicon/favicon.png">
-  <script src="http://www.fractals.studio/form/contact.js" type="text/javascript"></script>
-  <script src="http://www.fractals.studio/js/services.js" type="text/javascript"></script>
-  <script src="widgets/widgets.js" type="text/javascript"></script>
-  <script src="form/form.js" type="text/javascript"></script>
-  <script src="http://www.fractals.studio/include/jquery-3.1.1.js"></script>
-  <script>widgets(1);</script>
+    <meta charset="utf-8">
+    <title>Fractals Studio - Services</title>
+    <meta name="google-site-verification" content="9FJz30uZfHM5pPdZ0FQ8U-ri3YZhrnqNMaks8zuCPeM" />
+    <meta name="description" content="UI/UX Design, web development, online research and community management. Place your company at the top of the web with fractals studio">
+    <meta name="keywords" content="website development, website hosting, html website development, wordpress website creation, wordpress website development, wordpress website development services, Web design 2017, ui ux design company, ui ux web design, ui ux services, ui ux developer, web design and development company, search engine optimization for website, seo meta description, seo on wordpress, seo program, seo 1, website keywords, online market research, online market research companies, online market research tools, website evaluation, web traffic analysis">
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="index, follow" />
+    <link href="../../css/tags.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" id="style-css" href="//www.fractals.studio/css/services.css">
+    <link rel="stylesheet" type="text/css" id="style-css" href="//www.fractals.studio/css/menu.css">
+    <link rel="stylesheet" type="text/css" id="style-css" href="//www.fractals.studio/form/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Play:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="icon" type="image/png" href="//www.fractals.studio/favicon/favicon.png">
+    <script src="http://www.fractals.studio/include/jquery-3.1.1.js"></script>
+    <script src="widgets/widgets.js" type="text/javascript"></script>
+    <script>widgets(1);</script>
 </head>
 <body class="sectionBody" id="s" onscroll="hexRotate()">
 
@@ -45,8 +43,8 @@
   <div class="wallpaper"></div>
   <div class="wallpaper"></div>
   
-  <div id="fs-footer"></div>
-  <div id="fs-menu"></div>
+  <footer id="fs-footer"></footer>
+  <nav id="fs-menu"></nav>
 
   <div id="rotatorHex">
      <div id="rotHex2"></div>
@@ -79,32 +77,36 @@
           <div class="arrow" id="rightArrow" onclick="next()"></div>
       </div>
   </div>
-
-  <script>      
+    <script src="http://www.fractals.studio/form/contact.js" type="text/javascript"></script>
+    <script src="http://www.fractals.studio/js/services.js" type="text/javascript"></script>
+    
+    <script src="form/form.js" type="text/javascript"></script>
+    
+    <script>      
     var timer;
 
-      $(window).scroll(function() {
+        $(window).scroll(function() {
         if(timer) {
             window.clearTimeout(timer);
         }
 
         timer = window.setTimeout(function() {
             // actual callback
-          var s=document.getElementById('s');
-          var vH=window.innerWidth/100*53;
-          var f=s.scrollTop/vH;
-          var g=document.documentElement.scrollTop/vH;
-          if (navigator.userAgent.indexOf("Firefox") > 0) {
+            var s=document.getElementById('s');
+            var vH=window.innerWidth/100*53;
+            var f=s.scrollTop/vH;
+            var g=document.documentElement.scrollTop/vH;
+            if (navigator.userAgent.indexOf("Firefox") > 0) {
             scrollToY(Math.round(g)*vH,300,'easeInOutQuint');
-          }
-          else{
+            }
+            else{
             scrollToY(Math.round(f)*vH,300,'easeInOutQuint');
-          }
+            }
         }, 300);
-      });
+        });
 
       
-  </script>
+    </script>
 
 </body>
 </html>
