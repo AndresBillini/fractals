@@ -1,0 +1,140 @@
+*{
+  margin:0;padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:#000;
+  height:80vw;
+  overflow-x: hidden;
+  background-image:url(../media/gs.png);
+}
+
+#title{
+    position: fixed;
+    left:11.8vw;
+    top:3vw;
+    font-size:3vw;
+}
+
+#briefing{
+    
+}
+
+#carousel{
+    position:fixed;
+    left:10vw;
+    top:50%;
+    height:70%;
+    min-width:150vw;
+    margin-top:-13%;
+    transition:left 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.experiment{
+    position:relative;
+    width:20vw;
+    height:100%;
+    background-color:#aaa;
+    margin-right:-1.3vw;
+    float:left;
+    clip-path:polygon(10% 0%,100% 0%, 90% 100%, 0% 100%);
+    cursor:pointer;
+    background-blend-mode: multiply;
+    transition:width 0.5s, clip-path 0.5s, background-size 0.5s;
+    border-style: solid;
+    border-color:white;
+    border-width: 2px 0px 2px 0px;
+}
+
+.experiment:hover{
+    width:25vw;
+    clip-path:polygon(8% 0%,100% 0%, 92% 100%, 0% 100%);
+}
+
+#exp1{background-size:auto 100%;background-position: center;background-repeat: no-repeat;background-image:url(../media/experiment/exp12.png);}
+#exp2{background-size:auto 100%;background-position: 50% 50%;background-repeat: no-repeat;background-image:url(../media/experiment/exp22.png);}
+#exp3{background-size:auto 100%;background-position: center;background-repeat: no-repeat;background-image:url(../media/experiment/exp32.png);}
+#exp4{background-size:auto 100%;background-position: center;background-repeat: no-repeat;background-image:url(../media/experiment/exp42.png);}
+#exp5{background-size:auto 100%;background-position: center;background-repeat: no-repeat;background-image:url(../media/experiment/exp52.png);}
+#exp6{background-size:auto 100%;background-position: center;background-repeat: no-repeat;background-image:url(../media/experiment/exp62.png);}
+
+.expTitle{
+    position:absolute;
+    line-height:2vw;
+    top:50%;
+    margin-top:-1vw;
+    color:white;
+    font-family:'ubuntu';
+    font-weight: bold;
+    font-size:2vw;
+    text-align: center;
+    width:100%;
+    z-index:2;
+    transition:font-size 0.5s;
+}
+
+.expName{
+    position:absolute;
+    line-height:2vw;
+    top:50%;
+    margin-top:2vw;
+    color:white;
+    font-family:'ubuntu';
+    font-size:1.3vw;
+    width:100%;
+    text-align: center;
+}
+
+.decoration1{
+    position:absolute;
+    top:50%;
+    right:0;
+    width:75%;
+    height:2px;
+    background-color:#0f0;
+    margin-top:-1.3vw;
+    transition:width 0.5s;
+}
+
+.decoration2{
+    position:absolute;
+    top:50%;
+    left:0;
+    width:75%;
+    height:2px;
+    background-color:#0f0;
+    margin-top:1.3vw;
+    transition:width 0.5s;
+}
+
+.membrane{
+    position:absolute;
+    z-index:1;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0);
+    transition:background-color 0.5s;
+}
+
+.collab{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    font-family:'ubuntu';
+    color:white;
+    font-size:1.1vw;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3vw;
+    text-indent:-1vw;
+    z-index:100;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.collab:hover{
+    background-color:white;
+    color:#000;
+}

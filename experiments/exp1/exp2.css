@@ -1,0 +1,90 @@
+body{
+  margin:0;padding:0;
+  background-color:#fff;
+  overflow:hidden;
+}
+
+#parent{
+  position:absolute;
+  background-color:black;
+  height:100%;
+  width:100%;
+  top:0%;
+  left:0%;
+  perspective:1300px;
+  -webkit-perspective:1300px;
+}
+
+#child{
+  position:absolute;
+  height:80%;
+  width:80%;
+  left:10%;
+  top:10%;
+  background:url(giphy.gif);
+  background-color:#0a0;
+    background-blend-mode: multiply;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+  transition-timing-function:ease-in-out;
+  overflow-Y:scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+    background-color:#222;
+    cursor:pointer;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 7px;
+    background-color:#333;
+    cursor:pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color:#00ff00;
+    cursor:pointer;
+}
+
+#mouse{
+    position:fixed;
+    bottom:1vw;
+    right:1vw;
+    color:white;
+    font-family:'ubuntu';
+    width:10vw;
+    height:2vw;
+    line-height: 1vw;
+    background-image:url(mouse.svg);
+    background-repeat: no-repeat;
+    background-size:2vw auto;
+    background-position: right;
+    z-index:100;
+}
+
+.title{
+    color:white;
+    position:relative;
+    width:80%;
+    font-family:'play';
+    font-size:4vw;
+    font-weight: bold;
+    text-align:center;
+    margin-left:10%;
+    line-height: 4vw;
+}
+
+.paragraph{
+    position:relative;
+    width:40%;
+    text-align:center;
+    margin-left: 30%;
+    color:white;
+    font-family:'ubuntu';
+    font-size:1.2vw;
+}

@@ -1,0 +1,546 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image:url(../media/hexy.png);
+  overflow-x: hidden;
+}
+
+.section{
+    position:relative;
+    width:100vw;
+    height:170vw;
+    border-bottom: solid 1px #00ff00;
+}
+
+#menu{
+    position:fixed;
+    width:25vw;
+    height:25vw;
+    top:-9.5vw;
+    left:-12.5vw;
+    background-color:#00ff00;
+    -webkit-mask:url(../media/svg/hex2.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:25vw;
+    -webkit-mask-repeat:no-repeat;
+    background-image:url(../media/svg/menu.svg);
+    background-size:22%;
+    background-position:77% 60%;
+    background-repeat: no-repeat;
+    z-index:1000;
+}
+
+#deployed{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:#333;
+    z-index:10000;
+    display: none;
+}
+
+#menuLogo{
+    position:absolute;
+    top:10%;
+    height:25vw;
+    width:25vw;
+    left:50%;
+    margin-left:-12.5vw;
+    background-image: url(../media/logoF.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menuTitle{
+    top:28%;
+    font-size:6vw;
+}
+
+.menuOpt{
+    position:relative;
+    width:100%;
+    font-family: 'play';
+    font-size:5vw;
+    color:white;
+    height:10vw;
+    line-height:10vw;
+    text-indent: 20vw;
+    background:linear-gradient(to right,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+
+a{
+    text-decoration: none;
+}
+
+#mO1{margin-top:40vh;}
+
+#langSelector{
+    position:absolute;
+    top:45vh;
+    left:0;
+    margin-top:55vw;
+    height:10vw;
+    color:white;
+    background-color:rgba(0,0,0,0.3);
+    width:100%;
+    font-family:'ubuntu';
+    font-size:3.5vw;
+    text-align: center;
+    line-height:10vw;
+    color:rgba(0,255,0,0.7);
+    font-weight: bold;
+    -webkit-mask:url(../media/svg/hex.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:40vw;
+    -webkit-mask-repeat:no-repeat;
+}
+
+#close{
+    position:absolute;
+    bottom:5vw;
+    height:15vw;
+    width:15vw;
+    left:50%;
+    margin-left:-7.5vw;
+    background-color:#ccc;
+    -webkit-mask:url(../media/svg/hex2.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:15vw;
+    -webkit-mask-repeat:no-repeat;
+    background-image:url(../media/svg/x.svg);
+    background-position: center;
+    background-size:40%;
+    background-repeat: no-repeat;
+}
+
+.sM{
+    position:absolute;
+    right:3vw;
+    bottom:3vw;
+    width:14.5vw;
+    height:36vw;
+    z-index:1000;
+}
+
+#btcont{
+    left: 3vw;
+}
+
+.sM1{
+    position:absolute;
+    width:10vw;
+    margin-bottom:1vw;
+    height:10vw;
+    background-color:#0f0;
+    right:0;
+    -webkit-mask:url(../media/svg/hex2.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:10vw;
+    -webkit-mask-repeat:no-repeat;
+}
+
+.sM2{
+    position:absolute;
+    width:10vw;
+    margin-bottom:1vw;
+    height:10vw;
+    background-color:#0f0;
+    left:0;
+    -webkit-mask:url(../media/svg/hex2.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:10vw;
+    -webkit-mask-repeat:no-repeat;
+}
+
+#facebook{
+    top:0;
+    background-image:url(../media/svg/facebook.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#instagram{
+    top:8.5vw;
+    background-image:url(../media/svg/instagram.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#twitter{
+    top:17vw;
+    background-image:url(../media/svg/twitter.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#linkedin{
+    top:25.5vw;
+    background-image:url(../media/svg/linkedin.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectionTitle{
+    position:absolute;
+    width:100vw;
+    font-family: 'Play';
+    font-size:6vw;
+    color:white;
+    text-align: center;
+    top:10vw;
+    z-index:1000;
+}
+
+#home{
+    height: 160vw;
+}
+
+#logo{
+    position:absolute;
+    width:50vw;
+    height:50vw;
+    left:25vw;
+    top: 40%;
+    margin-top:-25vw;
+    background-image:url(../media/logoF.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#logo2{
+    position:absolute;
+    width:25vw;
+    height:25vw;
+    left:50vw;
+    margin-left: -12.5vw;
+    top: 50vh;
+    margin-top: -12.5vh;
+    background-image:url(../media/logoF.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pageTitle{
+    position:absolute;
+    font-family: "Play";
+    color:white;
+    z-index:1000;
+}
+
+#mainTitle{
+    position:absolute;
+    width:100vw;
+    top:105vw;
+    left:0;
+    z-index:100;
+    text-align: center;
+    font-size:8.5vw;
+}
+
+#services{
+    height: 110vw;
+}
+
+#halfTitle{
+    margin-left: 20vw;
+}
+
+#halfTitle2{
+    margin-left: 20vw;
+    top: 6vw;
+}
+
+.halfHighlight{
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:60vw;
+    text-align: left;
+    background-color:rgba(2,2,2,0.5);
+    color:white;
+    z-index: 99;   
+    padding-top:32vw;
+    padding-left:4vw;
+    padding-right:4vw;
+    line-height:5vw;
+    font-family:'ubuntu';
+    font-size:3.3vw;
+}
+
+.center{
+    text-align: center;
+    padding-left:2vw;
+    padding-right:2vw;
+    font-size:3vw;
+    line-height:4.5vw;
+    padding-top: 45vw;
+}
+
+.service{
+    position:relative;
+    color:white;
+    font-family:'ubuntu';
+    width:40%;
+    text-indent:16.5vw;
+    font-size:3vw;
+    line-height:8vw;
+}
+
+#s1{
+    background:linear-gradient(to right, rgba(0,0,0,0), rgba(2,2,2,0.5));
+}
+
+#p1{
+    background:linear-gradient(to right, rgba(0,0,0,0), rgba(2,2,2,0.5));
+}
+
+.underlineDecoration{
+    position:absolute;
+    right:0;
+    bottom:0;
+    height:1px;
+    width:50%;
+    background-color:#0f0;
+    opacity:0.7;
+}
+
+.radio{
+    position:absolute;
+    left:8.25vw;
+    top:50%;
+    height:5vw;
+    width:5vw;
+    margin-left:-2.5vw;
+    margin-top:-2.5vw;
+    background-color:rgba(200,200,200,0.5);
+    -webkit-mask:url(../media/svg/hex2.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:3.5vw;
+    -webkit-mask-repeat:no-repeat;
+    transition:background-color 0.3s;
+}
+
+#r1{
+    background-color:#0f0; 
+    transform:scale(1.5);
+}
+
+.radio2{
+    position:absolute;
+    left:12.25vw;
+    top:50%;
+    height:5vw;
+    width:5vw;
+    margin-left:-2.5vw;
+    margin-top:-2.5vw;
+    background-color:rgba(200,200,200,0.5);
+    -webkit-mask:url(../media/svg/hex2.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:3.5vw;
+    -webkit-mask-repeat:no-repeat;
+    transition:background-color 0.3s;
+}
+
+.arrow{
+    position:absolute;
+    left:8.25vw;
+    width:5vw;
+    height:5vw;
+    margin-left:-2.5vw;
+    background-image:url(../media/svg/next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform:rotateZ(-90deg);
+    top:24vw;
+    z-index: 5;
+}
+
+#a2{
+    transform:rotateZ(90deg);
+    top:80vw;
+}
+
+#a3{
+    transform:rotateZ(90deg);
+    top:76vw;
+}
+
+#portfolio{
+    height: 155vw;
+}
+
+#portLogo{
+    position:absolute;
+    top:20vw;
+    right:15vw;
+    width:30vw;
+    height:20vw;
+    background-image:url(../media/logos/gis.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#portScreen{
+    position:relative;
+    margin-top:5vw;
+    margin-left: 3vw;
+    width:50vw;
+    height:60vw;
+    background-color: grey;
+    background-image:url(../media/screen/gis.png);
+    background-size:cover;
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+}
+
+#layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: none;
+    background-image:url(../media/screen/gis.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10000;
+}
+
+#xclose{
+    position: absolute;
+    right: 2.5vw;
+    top: 2.5vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url(../media/svg/x.svg);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about{
+    padding-left:15vw;
+    padding-right:15vw;
+    color:white;
+    font-family:'ubuntu';
+    font-size:3.5vw;
+    line-height:4.3vw;
+}
+
+#aboutTitle{
+    width:70vw;
+    line-height:7vw;
+    top: 5vw;
+}
+
+#team{
+    position:relative;
+    width:70vw;
+    height:30vw;
+    top:25vw;
+    background-color:#0f0;
+    background-image:url(../media/portraits/group.png);
+    background-size:cover;
+    background-position: 50% 20%;
+    margin-bottom:30vw;
+}
+
+#experiments{
+    height: 150vw;
+}
+
+#contact{
+    height: 120vw;
+}
+
+#form{
+    position:absolute;
+    top:45%;
+    margin-top:-25vw;
+    width:70%;
+    min-height:50vw;
+    left:15vw;
+    height:auto;
+    color:white;
+    font-family:'ubuntu';
+    font-size:3.5vw;
+    line-height:5vw;
+    
+}
+
+.formInput{
+    width:100%;
+    background-color:transparent;
+    border-style: solid;
+    border-width:1px;
+    border-color:#0c0;
+    border-radius: 3px;
+    height: 4vh;
+    color: white;
+    text-indent: 2vw;
+}
+
+.submitButton{
+    position:relative;
+    float:right;
+    background-color:transparent;
+    border-style: solid;
+    border-width:1px;
+    border-color:#0c0;
+    font-family:'ubuntu';
+    font-size:3.5vw;
+    line-height:7vw;
+    color:white;
+    border-radius: 3px;
+    margin-top: 5vw;
+}
+
+.textarea{
+    height: 10vh;
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+    background-color:#222;
+    cursor:pointer;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 7px;
+    background-color:#333;
+    cursor:pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color:#00ff00;
+    cursor:pointer;
+}
+
+#thanks{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu light';
+    top: 50vw;
+    font-size: 6vw;
+}

@@ -1,0 +1,277 @@
+*{padding:0;margin:0;box-sizing: border-box;}
+
+body{
+    height:400vh;
+    background-image:url(../media/hexy.png);
+    background-blend-mode: multiply;
+    background-size:30vw;
+    overflow-x: hidden;
+    background-color:#333;
+}
+
+#wallpaper{
+    position:absolute;
+    //-webkit-mask: url(../media/svg/shadow1.svg);
+    -webkit-mask-size:2vw;
+    -webkit-mask-repeat:repeat;
+    height:500vh;
+    width:100%;
+    //background: linear-gradient(131deg, #0db213, #7d7d7d, #5f5f5f, #020101);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+
+#portfolioHolder{
+    position:fixed;
+    top:0vh;
+    left:12.5vw;
+    width:47.74vw;
+    height:400vh;
+    transition: margin-left 0.5s;
+}
+
+.fifth{
+    height:25%;
+    width:100%;
+    position:relative;
+}
+
+#portfolioHolder2{
+    position:fixed;
+    bottom:0;
+    left:60.24vw;
+    width:29.26vw;
+    height:400vh;
+}
+
+.projectScreen{
+    position:relative;
+    float:left;
+    top:25vh;
+    left:0;
+    width:47.74vw;
+    height:33vw;
+    background-color:lightgrey;
+    background-blend-mode: multiply;
+    background-size: 130%;
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    transition:background-color 0.5s, margin 0.5s;
+    color:white;
+    font-size:50vw;
+}
+
+#ps1{
+    background-image:url(../media/projects/gispower.png);
+    background-size:130%;
+    background-position:50% 50%;
+    -webkit-mask: url(../media/svg/pmask5.svg);
+    -webkit-mask-position:50%;
+    -webkit-mask-size:36vw;
+    -webkit-mask-repeat:no-repeat;
+}
+
+#ps2{
+    background-image:url(../media/svg/pmask1fixed.svg),url(../media/projects/verlas.png);
+    background-size:120%;
+    background-position:50% 50%;
+    -webkit-mask: url(../media/svg/pmask1.svg);
+    -webkit-mask-position:50%;
+    -webkit-mask-size:36vw;
+    -webkit-mask-repeat:no-repeat;
+}
+
+#ps3{
+    background-image:url(../media/svg/pmask4fixed.svg),url(../media/projects/cph.png);
+    background-size:130%;
+    background-position:50% 50%;
+    -webkit-mask: url(../media/svg/pmask4.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:38vw;
+    -webkit-mask-repeat:no-repeat;
+}
+
+#ps4{
+    background-image:url(../media/svg/pmask3fixed.svg),url(../media/projects/orchid.png);
+    background-size:130%;
+    background-position:50% 50%;
+    -webkit-mask: url(../media/svg/pmask3.svg);
+    -webkit-mask-position:50%;
+    -webkit-mask-size:36vw;
+    -webkit-mask-repeat:no-repeat;
+}
+
+#ps5{
+    background-image:url(../media/svg/pmask2fixed.svg),url(../media/projects/samambaya.png);
+    background-size:150%;
+    background-position:50% 50%;
+    -webkit-mask: url(../media/svg/pmask2.svg);
+    -webkit-mask-position:50%;
+    -webkit-mask-size:36vw;
+    -webkit-mask-repeat:no-repeat;
+}
+
+.projectScreen:hover{
+    background-color:#666;
+}
+
+.projectInfo{
+    position:absolute;
+    margin-top:21.5vh;
+    width:30vw;
+    color:white;
+    font-family:'ubuntu';
+}
+
+.projectTitle{
+    position:relative;
+    color:white;
+    font-weight: bold;
+    font-size:2.5vw;
+    border-bottom: solid 1px #0a0;
+    width:17.3vw;
+    text-indent: -12vw;
+    margin-left:12vw;
+}
+
+.projectLink{
+    position: relative;
+    font-size: 1.1vw;
+    margin-top:1vw;
+    color:#0c0;
+    font-weight: light;
+    text-decoration: underline;
+}
+
+.projectDescription{
+    font-size:1.3vw;
+    margin-top:0.5vw;
+    line-height:1.6vw;
+    letter-spacing: 0.01em;
+    color:#eee;
+    width:29.2vw
+}
+
+.servicesEmployed{
+    font-size:1.5vw;
+    margin-top:0.5vw;
+    line-height:1.6vw;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    line-height:2vw;
+    border-bottom: solid 1px #0a0;
+    width:16.3vw;
+    text-indent: -13vw;
+    margin-left:13vw;
+}
+
+.serviceList{
+    font-size:1.3vw;
+    margin-top:0.5vw;
+    line-height:1.6vw;
+    letter-spacing: 0.01em;
+    color:#eee;
+}
+
+.techEmployed{
+    font-size:1.5vw;
+    margin-top:0.5vw;
+    line-height:1.6vw;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    line-height:2vw;
+    border-bottom: solid 1px #0a0;
+    width:14.3vw;
+    text-indent: -15vw;
+    margin-left:15vw;
+}
+
+.techUsed{
+    list-style: none;
+    padding-top: 0.7vw;
+}
+
+.tech{
+    height:2vw;
+    width:2vw;
+    float:left;
+    color:white;
+    margin-right:0.5vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom:0.5vw;
+}
+
+#t1{background-image:url(../media/svg/html5.svg);}
+#t2{background-image:url(../media/svg/css.svg);}
+#t3{background-image:url(../media/svg/js.png);}
+#t4{background-image:url(../media/svg/wordpress.svg);}
+#t5{background-image:url(../media/svg/illustrator.svg);}
+#t6{background-image:url(../media/svg/php.svg);}
+#t7{background-image:url(../media/svg/photoshop.svg);}
+
+
+.linkIcon1{
+    position:absolute;
+    
+    width:3vw;
+    height:3vw;
+    margin-top:-1.5vw;
+    margin-left:-1.5vw;
+    background-color:#00ff00;
+    -webkit-mask: url(../media/svg/hexServices.svg);
+    -webkit-mask-position:center;
+    -webkit-mask-size:3vw;
+    -webkit-mask-repeat:no-repeat;
+    background-image:url(../media/svg/link.svg);
+    background-size:45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    opacity:0;
+    transition:opacity 0.5s;
+}
+
+#lI1{
+    top:28.5%;
+    left:29.5%;
+}
+
+#lI2{
+    top:59.75%;
+    left:39.5vw;
+}
+
+#lI3{
+    top:80%;
+    left:44%;
+}
+
+#lI4{
+    top:15.5%;
+    left:38.5vw;
+}
+
+#lI5{
+    top:40.5%;
+    left:8.3vw;
+}

@@ -1,0 +1,75 @@
+@font-face{
+    font-family: 'starwars';
+    src:url(franklin.ttf);
+}
+@font-face{
+    font-family: 'starwars2';
+    src:url(Starjedi.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    overflow-x:hidden;
+    background-color:black;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+#guide{
+    position:absolute;
+    top:0;
+    left:0;
+    width:1px;
+    height:950vh;
+}
+
+#parent{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:300vh;
+    perspective:1000px;
+    cursor:pointer;
+    background-image:url(starry-night-sky-shooting-star-footage-022914843_prevstill.jpeg);
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+#child{
+    position:absolute;
+    top:-100vh;
+    left:20vw;
+    width:60vw;
+    height:300vh;
+    transform:rotateX(30deg);
+    font-size: 3.5vw;
+    font-family:'ubuntu';
+    color:#0f0;
+    text-align:center;
+    line-height: 7vw;
+}
+
+#title{
+    font-family:'play';
+    font-size:6vw;
+}
+
+.stars{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:950vh;
+}
+
+

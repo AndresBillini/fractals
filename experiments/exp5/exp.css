@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100vw;
+    height:300vh;
+    background-color:aqua;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+.layer{
+    position:fixed;
+    height:132.56vw;
+    width:100vw;
+    top:0;
+    left:0;
+}
+
+#hill1{
+    background-image:url(1colina.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:-25vw;
+}
+
+#hill2{
+    background-image:url(2%20colina.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    top:-25vw;
+}
+
+#hill3{
+    background-image:url(3%20colina.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:-25vw;
+}
+
+#explore{
+    background-image:url(4%20explora.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:-25vw;
+}
+
+#hill4{
+    background-image:url(5%20colina.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:-45vw;
+}
+
+#highGrass{
+    background-image:url(6%20hierba%20alta.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:-60vw;
+}
+
+#lowGrass{
+    background-image:url(7%20hierba%20alta.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:-59vw;
+}
+
