@@ -32,9 +32,7 @@ body{
     height:30vw;
     margin-left:20vw;
     margin-top:13vw;
-    background-color:#0c0;
     background-size:cover;
-    background-blend-mode: multiply;
     background-position: 50% 30%;
     -webkit-mask: url(../media/svg/hexPattern2.svg);
     -webkit-mask-position:center;
@@ -45,7 +43,7 @@ body{
 
 #teamPhoto:hover{
     background-color: white;
-    -webkit-mask: none;
+    
 }
 
 .aboutParagraph{
@@ -104,17 +102,17 @@ body{
 }
 
 #p1{
-    background-image:url(../media/portraits/AndresE.png),url(../media/svg/hexBack2.svg);
-    background-size:79%,73.5%;
+    background-image:url(../media/svg/hexBack2.svg);
+    background-size:73.5%;
     background-repeat: no-repeat;
-    background-position: 20% 0%, 50% 80%;
+    background-position: 50% 80%;
 }
 
 #p2{
-    background-image:url(../media/portraits/AndreG.png),url(../media/svg/hexBack2.svg);
-    background-size:87%,73.5%;
+    background-image:url(../media/svg/hexBack2.svg);
+    background-size:73.5%;
     background-repeat: no-repeat;
-    background-position: 100% 40%, 50% 80%;
+    background-position:50% 80%;
 }
 
 #p3{

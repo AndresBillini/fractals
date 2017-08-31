@@ -11,3 +11,25 @@
 #langButton a:-webkit-any-link:hover {
     color: #00ff00;
 }
+
+#p1 img{
+    width: 79%;
+    height: 117.5%;
+    margin-left: 4%;
+    margin-top: 0%;
+}
+
+#p2 img {
+    width: 87.5%;
+    height: 130%;
+    margin-left: 12.5%;
+    margin-top: -11.5%;
+}
+
+#teamPhoto img {
+    margin-top: -5%;
+    width: 100%;
+    height: 133%;
+    background-color: #0c0;
+    background-blend-mode: multiply;
+}
