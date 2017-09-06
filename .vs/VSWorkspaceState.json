@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.vs\\config"
   ],
+  "SelectedNode": "\\experiments",
   "PreviewInSolutionExplorer": false
 }
