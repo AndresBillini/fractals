@@ -1,7 +1,6 @@
 function widgets(x) {
     $.getJSON("../../JSON/wdg.json", function (data) {
         var items;
-        console.log();
         items = data.home;
         switch (x) {
             case 1:

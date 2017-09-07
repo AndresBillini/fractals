@@ -118,7 +118,7 @@
     top: 5.8vw;
     left: 12.5vw;
     font-size: 4vw;
-    font-family: 'Play', sans-serif;
+    font-family: 'Abel', sans-serif;
     transition:left 0.5s;
     transition-timing-function: ease-in-out;
     z-index:997;
@@ -152,7 +152,7 @@
     left:0%;
     text-indent:7vw;
     color:white;
-    font-family: 'Play', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-weight: bolder;
     font-size:1.4vw;
     line-height:3vw;

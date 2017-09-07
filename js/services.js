@@ -89,8 +89,8 @@ function hexRotate() {
         g=Math.round(g);
         switch (g){
             case 0:
-                hTt.innerHTML="RESEARCH";
-                hTx.innerHTML="Market research<br>Keywords research<br>Artistic research";
+                hTt.innerText = "RESEARCH";
+                hTx.innerText="Market research\nKeywords research\nArtistic research";
                 hO[0].style.backgroundColor="#000";
                 hO[0].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/hexBG1.jpg)";
@@ -98,40 +98,40 @@ function hexRotate() {
             break;
 
             case 1:
-                hTt.innerHTML="DESIGN";
-                hTx.innerHTML="Corporate ID<br>UI/UX design<br>Content adaptation";
+                hTt.innerText="DESIGN";
+                hTx.innerText="Corporate ID\nUI/UX design\nContent adaptation";
                 hO[1].style.backgroundColor="#000";
                 hO[1].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/design2.jpg)";
             break;
 
             case 2:
-                hTt.innerHTML="WEB DEVELOPMENT";
-                hTx.innerHTML="Domain search<br>Hosting services<br>Website<br>Mobile website<br>Responsiveness<br>Databases<br>Webmail";
+                hTt.innerText="WEB DEVELOPMENT";
+                hTx.innerText="Domain search\nHosting services\nWebsite\nMobile website\nResponsiveness\nDatabases\nWebmail";
                 hO[2].style.backgroundColor="#000";
                 hO[2].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/dev2.jpg)";
             break;
 
             case 3:
-                hTt.innerHTML="SEARCH ENGINE OPTIMIZATION";
-                hTx.innerHTML="Search console<br>Keywords selection<br>Description formulation<br>Snippets & Google bots";
+                hTt.innerText="SEARCH ENGINE OPTIMIZATION";
+                hTx.innerText="Search console\nKeywords selection\nDescription formulation\nSnippets & Google bots";
                 hO[3].style.backgroundColor="#000";
                 hO[3].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/seo2.jpg)";
             break;
 
             case 4:
-                hTt.innerHTML="ANALYTICS";
-                hTx.innerHTML="Metrics monitoring<br>Audience behaviour report<br>Keywords performance report<br>Search Console report";
+                hTt.innerText="ANALYTICS";
+                hTx.innerText="Metrics monitoring\nAudience behaviour report\nKeywords performance report\nSearch Console report";
                 hO[4].style.backgroundColor="#000";
                 hO[4].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/analytics2.jpg)";
             break;
 
             case 5:
-                hTt.innerHTML="COMMUNITIES";
-                hTx.innerHTML="Website Community integration<br>Content and Community Management<br>Social Media Metrics<br>Email Setup";
+                hTt.innerText="COMMUNITIES";
+                hTx.innerText="Website Community integration\nContent and Community Management\nSocial Media Metrics\nEmail Setup";
                 hO[5].style.backgroundColor="#000";        
                 hO[5].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/community2.jpg)";
@@ -152,8 +152,8 @@ function hexRotate() {
         f=Math.round(f);
         switch (f){
             case 0:
-                hTt.innerHTML="RESEARCH";
-                hTx.innerHTML="Market research<br>Keywords research<br>Artistic research";
+                hTt.innerText="RESEARCH";
+                hTx.innerText="Market research\nKeywords research\nArtistic research";
                 hO[0].style.backgroundColor="#000";
                 hO[0].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/hexBG1.jpg)";
@@ -161,40 +161,40 @@ function hexRotate() {
             break;
 
             case 1:
-                hTt.innerHTML="DESIGN";
-                hTx.innerHTML="Corporate ID<br>UI/UX design<br>Content adaptation";
+                hTt.innerText="DESIGN";
+                hTx.innerText="Corporate ID\nUI/UX design\nContent adaptation";
                 hO[1].style.backgroundColor="#000";
                 hO[1].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/design2.jpg)";
             break;
 
             case 2:
-                hTt.innerHTML="WEB DEVELOPMENT";
-                hTx.innerHTML="Domain search<br>Hosting services<br>Website<br>Mobile website<br>Responsiveness<br>Databases<br>Webmail";
+                hTt.innerText="WEB DEVELOPMENT";
+                hTx.innerText="Domain search\nHosting services\nWebsite\nMobile website\nResponsiveness\nDatabases\nWebmail";
                 hO[2].style.backgroundColor="#000";
                 hO[2].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/dev2.jpg)";
             break;
 
             case 3:
-                hTt.innerHTML="SEARCH ENGINE OPTIMIZATION";
-                hTx.innerHTML="Search console<br>Keywords selection<br>Description formulation<br>Snippets & Google bots";
+                hTt.innerText="SEARCH ENGINE OPTIMIZATION";
+                hTx.innerText="Search console\nKeywords selection\nDescription formulation\nSnippets & Google bots";
                 hO[3].style.backgroundColor="#000";
                 hO[3].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/seo2.jpg)";
             break;
 
             case 4:
-                hTt.innerHTML="ANALYTICS";
-                hTx.innerHTML="Metrics monitoring<br>Audience behaviour report<br>Keywords performance report<br>Search Console report";
+                hTt.innerText="ANALYTICS";
+                hTx.innerText="Metrics monitoring\nAudience behaviour report\nKeywords performance report\nSearch Console report";
                 hO[4].style.backgroundColor="#000";
                 hO[4].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/analytics2.jpg)";
             break;
 
             case 5:
-                hTt.innerHTML="COMMUNITIES";
-                hTx.innerHTML="Website Community integration<br>Content and Community Management<br>Social Media Metrics<br>Email Setup";
+                hTt.innerText="COMMUNITIES";
+                hTx.innerText="Website Community integration\nContent and Community Management\nSocial Media Metrics\nEmail Setup";
                 hO[5].style.backgroundColor="#000";        
                 hO[5].style.color="#fff";
                 rH2.style.backgroundImage="url(http://www.fractals.studio/media/community2.jpg)";
