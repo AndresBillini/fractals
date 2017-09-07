@@ -34,11 +34,15 @@ body{
     margin-top:13vw;
     background-size:cover;
     background-position: 50% 30%;
+    background-image: url(../media/portraits/group.png);
+    background-color: #0F0;
+    background-blend-mode: multiply;
     -webkit-mask: url(../media/svg/hexPattern2.svg);
     -webkit-mask-position:center;
     -webkit-mask-repeat:no-repeat;
     -webkit-mask-size:80vw;
     transition: background-color 0.5s;
+    z-index:3;
 }
 
 #teamPhoto:hover{

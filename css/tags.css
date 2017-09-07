@@ -27,9 +27,6 @@
 }
 
 #teamPhoto img {
-    margin-top: -5%;
-    width: 100%;
-    height: 133%;
-    background-color: #0c0;
-    background-blend-mode: multiply;
+    display:none;
 }
+
