@@ -1,43 +1,27 @@
-function widgets(x){
-    var test = x;
-        
-    if (window.XMLHttpRequest) {
-            xmlhttp = new XMLHttpRequest();
-          }else{
-            xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
-          }
-          
-
-          xmlhttp.onreadystatechange = function(){
-            if(xmlhttp.readyState==4 && xmlhttp.status == 200){
-              myObj = JSON.parse(this.responseText);
-              document.getElementById("fs-menu").innerHTML = myObj.menu;
-              document.getElementById("fs-footer").innerHTML = myObj.footer;
-              document.getElementById("fs-contact").innerHTML = myObj.contactos;
-            }
-          }
-          xmlhttp.open('GET','../../widgets/wdg.php?name='+test,true);
-          xmlhttp.send();
-}
-
-function juguetos(x){
-    var test = x;
-        
-    if (window.XMLHttpRequest) {
-            xmlhttp = new XMLHttpRequest();
-          }else{
-            xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
-          }
-          
-
-          xmlhttp.onreadystatechange = function(){
-            if(xmlhttp.readyState==4 && xmlhttp.status == 200){
-              myObj = JSON.parse(this.responseText);
-              document.getElementById("fs-menu").innerHTML = myObj.menu;
-              document.getElementById("fs-footer").innerHTML = myObj.footer;
-              document.getElementById("fs-contact").innerHTML = myObj.contactos;
-            }
-          }
-          xmlhttp.open('GET','widgets/jgt.php?name='+test,true);
-          xmlhttp.send();
+function juguetos(x) {
+    $.getJSON("../../JSON/jgt.json", function (data) {
+        var items;
+        items = data.home;
+        switch (x) {
+            case 1:
+                items += data.secondary.servicios.menu;
+                items += data.secondary.servicios.contact;
+                break;
+            case 2:
+                items += data.secondary.portafolio.menu;
+                items += data.secondary.portafolio.contact;
+                break;
+            case 3:
+                items += data.secondary.nosotros.menu;
+                items += data.secondary.nosotros.contact;
+                break;
+            case 4:
+                items += data.secondary.experimentos.menu;
+                items += data.secondary.experimentos.contact;
+                break;
+        }
+        document.getElementById("fs-contact").innerHTML = data.contact;
+        document.getElementById("fs-menu").innerHTML = items;
+        document.getElementById("fs-footer").innerHTML = data.footer;
+    });
 }

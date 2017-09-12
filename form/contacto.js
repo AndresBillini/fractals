@@ -10,7 +10,6 @@ function deployContact(x){
 
         cH[0].style.top="50%";
         cH[0].style.left="50%";
-        cH[0].innerHTML='<form name="contactForm">           <p class="inputLabel">Nombre / Compañía</p>            <input class="hexInput" name="name" type="text">            <p class="inputLabel">Email</p>            <input class="hexInput" name="mail" type="text">            <p class="inputLabel">Mensaje</p>           <textarea class="hexInput2" name="message" type="text"></textarea>        </form>';
         cH[0].style.zIndex="10000";
 
         cH[1].style.top="43%";
